@@ -1,0 +1,16 @@
+{
+  "name": "poddar-creation",
+  "version": "1.0.0",
+  "description": "Premium fabric catalog for Poddar Creation",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": ["fabric", "textile", "catalog", "whatsapp"],
+  "author": "Poddar Creation",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
