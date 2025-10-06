@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poddar Creation - Premium Dyed Fabrics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2 class="brand-text">PODDAR CREATION</h2>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#catalog" class="nav__link">CATALOG</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">ABOUT</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">CONTACT</a>
+                </li>
+            </ul>
+            <div class="nav__icons">
+                <button class="nav__icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="21 21l-4.35-4.35"/>
+                    </svg>
+                </button>
+                <button class="nav__icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+            <ul class="mobile-menu-links">
+                <li><a href="#home" class="mobile-menu-link">HOME</a></li>
+                <li><a href="#catalog" class="mobile-menu-link">CATALOG</a></li>
+                <li><a href="#about" class="mobile-menu-link">ABOUT</a></li>
+                <li><a href="#contact" class="mobile-menu-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__background">
+            <div class="hero__parallax-text">FASHION</div>
+        </div>
+        <div class="hero__container container">
+            <div class="hero__content">
+                <span class="hero__subtitle animate-fade-up" data-delay="0">EST. 2009 • SURAT, GUJARAT</span>
+                <h1 class="hero__title">
+                    <span class="hero__title-line animate-fade-up" data-delay="200">SMOOTH.</span>
+                    <span class="hero__title-line animate-fade-up" data-delay="400">SLEEK.</span>
+                    <span class="hero__title-line animate-fade-up" data-delay="600">STUNNING FABRICS</span>
+                </h1>
+                <p class="hero__description animate-fade-up" data-delay="800">
+                    TIMELESS FASHION ESSENCE - Premium mill-dyed fabrics with superior quality and vibrant colors for all your textile needs.
+                </p>
+                <div class="hero__buttons animate-fade-up" data-delay="1000">
+                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('catalog')">
+                        EXPLORE CATALOG
+                    </button>
+                    <button class="btn btn--outline btn--lg" onclick="scrollToSection('contact')">
+                        GET QUOTE
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>PREMIUM FABRICS • SUPERIOR QUALITY • VIBRANT COLORS • MILL-DYED EXCELLENCE • </span>
+                <span>PREMIUM FABRICS • SUPERIOR QUALITY • VIBRANT COLORS • MILL-DYED EXCELLENCE • </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fabric Catalog -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="section-header animate-fade-up">
+                <h2 class="section-title">OUR FABRIC CATALOG</h2>
+                <p class="section-subtitle">Browse our complete collection of premium dyed fabrics</p>
+            </div>
+
+            <div class="catalog__filters animate-fade-up">
+                <button class="filter-btn active" data-filter="all">ALL FABRICS</button>
+                <button class="filter-btn" data-filter="cotton">COTTON</button>
+                <button class="filter-btn" data-filter="rayon">RAYON</button>
+                <button class="filter-btn" data-filter="silk">SILK</button>
+                <button class="filter-btn" data-filter="stretch">STRETCH</button>
+            </div>
+
+            <div class="catalog__grid" id="catalog-grid">
+                <!-- Product cards will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__content animate-fade-up">
+                    <span class="about__label">ABOUT PODDAR CREATION</span>
+                    <h2 class="about__title">15+ YEARS OF EXCELLENCE IN TEXTILE INDUSTRY</h2>
+                    <p class="about__description">
+                        Since 2009, Poddar Creation has been at the forefront of premium fabric dyeing and textile manufacturing. 
+                        Based in Surat, Gujarat - the textile hub of India - we specialize in creating vibrant, high-quality 
+                        dyed fabrics that meet international standards.
+                    </p>
+                    
+                    <div class="about__stats">
+                        <div class="stat animate-fade-up" data-delay="0">
+                            <span class="stat__number">15+</span>
+                            <span class="stat__label">YEARS EXPERIENCE</span>
+                        </div>
+                        <div class="stat animate-fade-up" data-delay="100">
+                            <span class="stat__number">500+</span>
+                            <span class="stat__label">HAPPY CLIENTS</span>
+                        </div>
+                        <div class="stat animate-fade-up" data-delay="200">
+                            <span class="stat__number">1000+</span>
+                            <span class="stat__label">COLOR VARIATIONS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__services animate-fade-up">
+                    <h3 class="services__title">OUR SERVICES</h3>
+                    <div class="services__grid">
+                        <div class="service-item animate-stagger" data-delay="0">
+                            <h4 class="service-item__title">CUSTOM DYEING</h4>
+                            <p class="service-item__description">Bespoke color matching and custom dyeing services for your specific requirements</p>
+                        </div>
+                        <div class="service-item animate-stagger" data-delay="100">
+                            <h4 class="service-item__title">BULK ORDERS</h4>
+                            <p class="service-item__description">Competitive pricing for large quantity orders with guaranteed quality</p>
+                        </div>
+                        <div class="service-item animate-stagger" data-delay="200">
+                            <h4 class="service-item__title">COLOR MATCHING</h4>
+                            <p class="service-item__description">Precise Pantone and custom color matching services</p>
+                        </div>
+                        <div class="service-item animate-stagger" data-delay="300">
+                            <h4 class="service-item__title">QUALITY TESTING</h4>
+                            <p class="service-item__description">Comprehensive quality control and testing for all fabric batches</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-fade-up">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <p class="section-subtitle">Ready to discuss your fabric requirements?</p>
+            </div>
+
+            <div class="contact__container">
+                <div class="contact__info animate-fade-up">
+                    <h3 class="contact__info-title">CONTACT INFORMATION</h3>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <strong>ADDRESS:</strong>
+                            <p>Plot No 30-31, Shree Mahavir Textile Market<br>Ring Road, Saroli, Surat, Gujarat, 395010</p>
+                        </div>
+                        <div class="contact__detail">
+                            <strong>PHONE:</strong>
+                            <p>+91 261 XXX XXXX</p>
+                        </div>
+                        <div class="contact__detail">
+                            <strong>EMAIL:</strong>
+                            <p>info@poddarcreation.com</p>
+                        </div>
+                        <div class="contact__detail">
+                            <strong>WEBSITE:</strong>
+                            <p>www.poddarcreation.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form animate-fade-up" id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">FULL NAME</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="fabric-type">FABRIC TYPE OF INTEREST</label>
+                        <select id="fabric-type" name="fabric-type" class="form-control">
+                            <option value="">SELECT FABRIC TYPE</option>
+                            <option value="cotton">COTTON FABRICS</option>
+                            <option value="rayon">RAYON FABRICS</option>
+                            <option value="silk">SILK FABRICS</option>
+                            <option value="stretch">STRETCH FABRICS</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Tell us about your fabric requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">SEND INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>PODDAR CREATION</h3>
+                    <p>Premium dyed fabrics since 2009</p>
+                </div>
+                <div class="footer__info">
+                    <p>&copy; 2024 Poddar Creation. All rights reserved.</p>
+                    <p>Surat, Gujarat, India</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Quick View -->
+    <div class="modal hidden" id="fabric-modal">
+        <div class="modal__backdrop" onclick="closeFabricModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeFabricModal()">&times;</button>
+            <div class="modal__body" id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
